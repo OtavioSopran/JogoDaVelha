@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height:100vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.stage{
+    width: 50rem;
+    height: 50rem;
+    background-color: rgb(127, 219, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square{
+    width: 15rem;
+    height: 15rem;
+    background-color: beige;
+    border: 1px solid grey;
+}
+
+.square:hover{
+    filter: brightness(1.2);
+}
+
+.o{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o:after{
+    content: "\🛡️";
+    font-size: 8.6rem;
+    line-height: 16rem;
+}
+
+.x{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x:after{
+    content: "\⚔️️";
+    font-size: 7.5rem;
+    line-height: 16rem;
+}
+
+.button-restart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-top: 5rem;
+    padding: 2rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(127, 219, 241);
+    color: grey;
+    cursor: pointer;
+    transition: filter .2s;
+}
+
+button:hover, .button:hover{
+    filter: brightness(1.2);
+}
